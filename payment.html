@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <title>TRENDYWEAR | Product Details Page</title>
+    <link href="mainstyles.css" rel="stylesheet" type="text/css" />
+    <link href="payment.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+
+    <script>
+        function passvalues() {
+            var firstname = document.getElementById('text').value;
+            localStorage.setItem("textvalue", firstname);
+
+            var mail = document.getElementById('email').value;
+            localStorage.setItem("emails", mail);
+
+            var address = document.getElementById('add').value;
+            localStorage.setItem("addrs", address);
+
+            var ctry = document.getElementById('country').value;
+            localStorage.setItem("cantry", ctry);
+
+            var cities = document.getElementById('city').value;
+            localStorage.setItem("citys", cities);
+            return false;
+        }
+
+        function validate() {
+            var val = document.getElementById('cardnum').value;
+
+            if(val.match(/^[a-zA-Z]+$/)){
+                alert("Please enter number only");
+                return false;
+            }
+            else {
+                return true;
+            }
+            
+        }
+
+        function validateName() {
+            var name = document.getElementById('text').value;
+
+            if(name.match(/^[a-zA-Z]+$/)){
+                return true;
+            }
+            else {
+                alert("Please enter ALPHABETS only");
+                name.focus();
+                name.select();
+                return false;
+            }
+        }
+
+        function validate2() {
+            var code = document.getElementById('postcode').value;
+
+            if(code.match(/^[a-zA-Z]+$/)){
+                alert("Please enter number only");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body onload="display_success();">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="home.html"><img src="trendywearlogo.png" alt="TRENDYWEAR"/></a>
+                <h1>TRENDYWEAR</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li><a href="AllProductspage.html">All Products</a></li>
+                            <li><a href="menPage.html">Men</a></li>
+                            <li><a href="Womenspage.html">Women</a></li>
+                            <li><a href="Kidspage.html">Kids</a></li>
+                            <li><a href="NewArrivalspage.html">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Specials</a>
+                        <ul>
+                            <li><a href="Eventpage.html">Events</a></li>
+                            <li><a href="Promotionpage.html">Promotions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="vacancy.html">Vacancy</a></li>
+                            <li><a href="customerService.html">Customer Service</a></li>
+                        </ul>
+                    </li>
+                        
+                </ul>
+                <a href="cart.html" class="cart"><span class="noob">0</span><img src="shoppingcartlogo.jpg" alt="Shopping Cart" width="25px" height="25px" /></a>
+                <a href="login.html"><img src="useraccountlogo1.jpg" alt="Shopping Cart" width="25px" height="25px" style="margin: 15px 0;"/></a>
+            </nav>
+        </div>
+    </div>
+
+    <br/>
+    <div class="paycard">
+        <form>
+            <fieldset class="field">
+            <legend>Accepted Cards</legend>
+            <input type="radio" id="r1" name="cards" value="r1">
+            <img class="c1" src="maybank.jpg" alt="maybank">
+            <input type="radio" id="r2" name="cards">
+            <img class="c2" src="visa.jpg" alt="visa">
+            <input type="radio" id="r3" name="cards">
+            <img class="c3" src="mastercard.jpg" alt="mastercard">
+            <input type="radio" id="r4" name="cards">
+            <img class="c4" src="cimb.jpg" alt="cimb">
+    </fieldset>
+    </form>
+</div>
+    <br/>
+    
+    <h4 class="info">Information</h4>
+    
+    <div class="information">
+        <br/>
+        <h4 style="margin: 0 0 0 460px;">YOUR INFORMATION</h4>
+        <br/>
+        <form class="infobox" action="tq.html" method="GET">
+            <label>Name</label>
+            <br/>
+            <input type="text" id="text" name="text" size="40" placeholder="Your Name" required onkeyup="validateName();">
+            <aside>
+                <div class="summary">
+                   <p class="summary2">Summary</p>
+                   <br/>
+                   <table>
+                       <tr>
+                           <td>
+                           <div class="tPrice">
+                               <h4 id="tPrice2"> </h4>
+                           </div>
+                        </td>
+                       </tr>
+                   </table>
+                   <hr class="hline2">
+                   
+                   <table>
+                       <tr>
+                           <td>
+                               <div class="sPrice">
+                                   <h4 id="hPrice2"> </h4>
+                               </div>
+                           </td>
+                       </tr>
+                   </table>
+                
+                </div>
+            </aside>
+
+            <br/>
+            <br/>
+
+            <label>Email Address</label>
+            <br/>
+            <input type="email" id="email" name="email" size="40" placeholder="yes@example.com" required>
+
+            <br/>
+            <br/>
+
+            <label>Address</label>
+            <br/>
+            <input type="text" id="add" name="add" size="40" placeholder="3,xxxxxx Street 2/1,xxxxxx" required>
+
+            <br/>
+            <br/>
+
+            <label for="country">Country</label>
+            <br/>
+            <input list="countries" name="country" id="country" style="width: 481px;" required>
+            <datalist id="countries">
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Japan">Japan</option>
+                <option value="Korea">Korea</option>
+                <option value="United States Of America">United States Of America</option>
+                <option value="Europe">Europe</option>
+            </datalist>
+
+            <br/>
+            <br/>
+
+            <label>City</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label>Postcode</label>
+            <br/>
+            <input type="text" id="city" name="city" size="20" placeholder="Pulau Pinang" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="postcode" name="postcode" size="40" placeholder="11600" required onkeyup="validate2();">
+
+            <br/>
+            <br/>
+
+            <label>Card Number</label>
+            <br/>
+            <input type="text" id="cardnum" name="cardnum" placeholder="1111-2222-3333-4444" required onkeyup="validate();">
+            <br/>
+            <br/>
+            <hr class="hline">
+            <br/>
+            <input type="submit" value="PLACE ORDER" id="orderbtn" name="orderbtn" onclick="passvalues();">
+            <br/>
+            <br/>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Get Help</h3>
+                <ul>
+                    <li><a href="customerService.html">Customer Service</a></li>
+                    <li><a href="vacancy.html">Vacancy</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="AllProductspage.html">All Products</a></li>
+                    <li><a href="NewArrivalspage.html">New Arrivals</a></li>
+                    <li><a href="Eventpage.html">Events</a></li>
+                    <li><a href="PromotionPage.html">Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Contact Us</h3>
+                <a href="https://twitter.com/TrendyWear4" target="_blank"><img src="twitterlogo.jpg" alt="Twitter" height="30px" width="30px" style="margin-right: 10px;"/></a>
+                <a href="https://www.instagram.com/trendywear_co/" target="_blank"><img src="instagramlogo.jpg" alt="Instagram" height="30px" width="30px" /></a>
+                <a href="https://www.facebook.com/trendy.wear.585" target="_blank"><img src="facebooklogo.jpg" alt="Facebook" height="30px" width="30px" /></a>
+                <a href="mailto:TrendyWearCo18@gmail.com" target="_blank"><img src="emaillogo.png" alt="Email" height="30px" width="30px" style="margin-left: 10px;"/></a>
+            </div>
+        </div>
+        <hr/>
+        <p class="copyright">Copyright &#169 2020 - TRENDYWEAR</p>
+    </div>
+
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
+    
+    
+    
+
+</body>
+

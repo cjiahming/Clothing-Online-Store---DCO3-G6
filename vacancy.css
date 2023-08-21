@@ -1,0 +1,221 @@
+
+html{
+    background-color: beige;
+}
+
+
+body{
+    margin: 0 auto;
+    background-color: #d6e0f0;
+}
+
+/* .banner{
+    background-color: #1a1a2e;
+    width: 1350px;
+    height: 400px;
+    color: white;
+    display: flex;
+
+}   */
+
+table{
+    border-color: #a6dcef;
+}
+
+td{
+    border-color: #a6dcef;
+}
+
+.banner-text{
+    margin: auto;
+}
+
+.vacancyHeader{
+    color:#d6e0f0;
+	font-size:5em;
+	position:absolute;
+	top:3.5em;
+	left:60%;
+	z-index:1;
+	font-family: 'Major Mono Display', monospace;
+}
+
+.vacancy1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.vacancy{
+    text-align: center;
+    font-size: 5em;
+
+    display: block;
+    border-bottom:solid ;
+    width: 739px;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 5px;
+    
+}
+
+#historyHeader{
+   
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+
+
+table.center{
+    /* padding: 0px 10px;
+    margin-left: 110px ;
+    margin-right: 110px; */
+    
+}
+
+.picCell{
+    width: 30%;
+    
+}
+
+
+
+
+/*----------- the contact details---------------*/
+
+#contactsText{
+    text-align: center;
+}
+
+#vacancyEnd{
+    text-align: center;
+    padding: 0px 10px;
+    margin-left: 110px ;
+    margin-right: 110px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+.vacancy{
+    display: block;
+    border-bottom:solid ;
+    width: 393px;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 5px;
+    text-align: center;
+    margin: auto;
+    
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+h2{
+    text-align: center;
+}
+
+.right-side{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.left-side{
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+hr{
+    background-color: black;
+    height: 5px;
+    border: none;
+    margin: auto;
+   
+}
+
+a{
+    
+  
+  color: #fff;
+  
+
+
+    
+    color: blue;
+}
+
+.hrPic{
+    margin:  auto;
+    display: block;
+    position: absolute;
+
+    top:568px;
+	left:42%;
+    z-index:1;
+
+}
+
+
+.hrPic2{
+    margin:  auto;
+    display: block;
+    position: absolute;
+
+    top:504px;
+	left:42%;
+    z-index:1;
+    
+    transform: rotate(180deg) scaleX(-1);
+
+
+}
+
+/*-----------images---------------*/
+
+.group1{
+    width: 620px;
+    height: 400px;
+    
+}
+
+.group2{
+    width: 634px;
+    
+}
+
+/* -------------------title hr-------------------*/
+
+.hrSubTitle{
+    width: 50%;
+}
+
+
+
+/*-----reniew div for text-------------*/
+
+.parent-div{
+    display: flex;
+    
+}
+
+.child-div1{
+    flex: 1;
+    margin: auto;
+    height: ;
+    
+}
+
+.child-div2{
+    flex: 1;
+    margin: auto
+    width: ;
+}
+
+.child-div2 image{
+    /* width: 200px;
+    position: absolute;
+  clip: rect(0, 100px, 200px, 0);
+  clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+}

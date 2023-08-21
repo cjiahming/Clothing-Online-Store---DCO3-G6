@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Register page</title>
+        <link href="registercss.css" rel="stylesheet" type="text/css" /> 
+        <script type="text/javascript" src="valid.js"></script>
+         
+    </head>
+        <body>
+            <div class="container">
+                <div class="logo">
+                    <img src="trendywearlogo.png">
+                    </div>
+                <div class="header">
+                    <h2>TrendyWear</h2>
+                    <h2>Register</h2>
+                </div>
+                <form class="form" name="form" onsubmit="return validate()" action="login.html">
+                    
+                    <div class="font">NAME</div>
+                    <input type="text" name="name" id="name" placeholder="Ali">
+                    <div id="name_error" >*Please enter a valid name</div>
+
+                    <div class="font">EMAIL</div>
+                    <input type="text" name="email" id="email" placeholder="gabriel@gmail.com">
+                    <div id="email_error" >*Please enter a valid email</div>
+
+                    <div class="font">PASSWORD</div>
+                    <div class="input-container" id="input-container">
+                    <input type="password" name="password" id="password">
+                    <i class="material-icons visibility" onclick="visibility()">visibility_off</i><!--two class -->
+                    </div>
+                    <div id="pass_error" >*Please enter a valid password</div>
+
+                    <div class="font">CONFIRM PASSWORD</div>
+                    <div class="input-container2" id="input-container2">
+                    <input type="password" name="password2" id="password2">
+                    <i class="material-icons visibility2" onclick="visibility2()">visibility_off</i>
+                </div>
+                    <div id="pass_error2" >*Password not same </div>
+
+                    <button type="submit" class="submit">Register</button>
+                </form>
+                <div class="extra">
+                <a href="login.html"><button class="ac">Already have an account? </button></a>
+            </div>
+            </div>
+        </body>
+</html>

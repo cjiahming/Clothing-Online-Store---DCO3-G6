@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+*{
+    padding: 0 ;
+    margin: 0 ;
+}
+
+@font-face{
+    font-family:'QS';
+    src:url(fonts/Quicksand/Quicksand-Bold.ttf);
+    font-style:normal;
+    font-weight:100;
+}
+
+@font-face{
+    font-family:'Helvetica';
+    src:url(fonts/Helvetica/Helvetica.ttf);
+    font-style:normal;
+    font-weight:100;
+}
+
+body{
+    background:url(background.jpg) no-repeat;
+    background-size:cover;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+}
+
+/*.image{
+    position:relative;
+    margin-top: 100px;
+    width:350px;
+    height:400px;
+    background:rgb(41,41,71);
+    float:left;
+}*/
+
+/*.image2{
+    text-align:center;
+    margin-top:10px;
+}
+
+.image2 img{
+    border-radius:15px
+}*/
+
+.container{
+    position:relative;/*let all div stuck in the box*/
+    margin-top: 100px;
+    width:450px;
+    height:auto;
+    background:rgb(41,41,71);
+    border-radius: 15px;
+    float:right;
+}
+
+.header{
+    padding:20px 130px;
+    text-align:center;
+    font-size:20px;
+    font-family:QS;
+    font-weight:100;
+    color:white;
+}
+
+.logo{
+    padding-top:10px;
+    margin:0px;
+    margin-right:17%;
+    float:right;
+    text-align:center;
+    padding-left:20px;
+}
+
+.login_form{
+    padding: 0px 40px;
+    margin-top:0px;
+}
+
+.login_form .font{
+    font-size: 13px;
+    color:white;
+    margin:5px;
+    font-family:Helvetica;
+    font-weight:100;
+    margin-top:20px;
+}
+
+.login_form input{
+    height: 30px;
+    width: 360px;
+    padding:0 5px;
+    font-size:15px;
+    outline:none;/*clear the outline when we click the box*/
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.login_form .submit{
+    margin:45px 0 -5px 0;
+    height: 35px;
+    width:360px;
+    font-size:13px;
+    font-family:QS;
+    font-weight:100;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid black;/*let border color becomes black */
+    background-color:rgb(82,82,152);
+    color:white;
+}
+
+.login_form .submit:hover{
+    background-color:rgb(84,84,223);
+}
+
+.login_form #email_error,
+.login_form #pass_error{
+    margin-top:3px;
+    width:350px;
+    font-size:15px;
+    color:red;
+    display:none;
+    font-family:Helvetica;
+    font-weight:100;
+}
+
+.registernew{
+    font-size:13px ;
+    color:rgb(84,84,223);
+    font-family:QS;
+    font-weight:100;
+    padding:0;
+    border:none;
+    background:none;
+    outline:none;
+    margin-left:10%;
+    margin-bottom:10px;
+    
+}
+
+.registernew:hover{
+    color:white;
+}
+
+.forgetpass{
+    color:rgb(84,84,223);
+    margin-left:15%;
+    font-family:QS;
+    font-weight:100;
+    padding:0;
+    border:none;
+    background:none;
+    outline:none;
+    margin-bottom:20px;
+}
+
+.forgetpass:hover{
+    color:white;
+}
+
+.extra{
+    margin-top:10px;
+    padding-top:10px;
+}
+
+i{
+    display:flex;
+    margin:0px 5px 0px 0px;
+    cursor:default;/*When aim to the image of password it will become normal cursor*/
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color:white;
+  }
+
+  .input-container input{
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    color: #333;
+    
+  }
+

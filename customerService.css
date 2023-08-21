@@ -1,0 +1,328 @@
+
+body{
+    margin: 0 auto;
+    background-color: #d6e0f0;
+}
+
+/* .banner{
+    background-color: #1a1a2e;
+    width: 1350px;
+    height: 400px;
+    color: white;
+    display: flex;
+
+}   */
+
+.banner-text{
+    margin: auto;
+}
+
+.customerService{
+    text-align: center;
+    display: block;
+    border-bottom: solid;
+}
+
+.customerService{
+    display: block;
+    
+    width: 470px;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 5px;
+    text-align: center;
+    margin: auto;}
+    
+
+
+/* -------------------------------------------specifics----------------------------*/
+
+#csTable{
+    
+    margin-left: auto ;
+    margin-right: auto;
+    border-right: 0px;
+    display: flex;
+    
+    
+}
+
+#emailUs{
+    text-align: center;
+    width: 530px;
+}
+
+#whatsappUs{
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+  
+    
+  
+   
+}
+
+td{
+    border-collapse: collapse;
+    
+
+}
+
+#r1c1{
+    padding: 0px 50px 0px 50px;
+    
+    
+
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 40px;
+}
+
+#r1c2{
+    padding: 50px;
+
+    width: 50%;
+
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 50px;
+    
+
+    
+}
+
+#r2c2{
+    padding: 0px 50px 50px 50px;
+    
+    
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 40px;
+
+    
+}
+
+
+td{
+    
+}
+
+
+
+
+/* --------------------------the table---------------------*/
+
+/* #r1c1{
+    width: 640px;
+} */
+
+
+
+
+/* ------------------r1c1-----------------------------------*/
+footer{
+    margin: 70px auto auto auto;
+    
+}
+
+
+
+.form-row{
+    padding: 10px 0;
+    display: flex;
+}
+
+.form-row input{
+    flex: 1;
+}
+.form-row textarea{
+    flex: 1;
+}
+
+footer{
+    width: 1349px;
+    height: 150px;
+    
+}
+
+#footerText{
+    text-align: center;
+    display: block;
+    
+}
+
+
+.customerServiceHeader{
+    color:#d6e0f0;
+	font-size:5em;
+	position:absolute;
+	top:3.5em;
+	left:60%;
+	z-index:1;
+	font-family: 'Major Mono Display', monospace;
+}
+
+/*-----------------------r1c2-----------------------------------------*/
+
+
+
+#contactTable  td{
+    padding: 0px 10px;
+   border: solid;
+    margin: auto;
+    
+}
+
+#contactTable  table{
+    padding: 0px 10px;
+   border: solid;
+    margin: auto;
+    
+}
+
+.fsSubmitButton
+{
+	border-top:		2px solid #a3ceda;
+	border-left:		2px solid #a3ceda;
+	border-right:		2px solid #4f6267;
+	border-bottom:		2px solid #4f6267;
+	padding:		10px 20px !important;
+	font-size:		14px !important;
+	background-color:	#c4f1fe;
+	font-weight:		bold;
+	color:			#2d525d;
+}
+
+
+/*-----------------------r2c2-----------------------------------------*/
+
+
+
+
+
+/* --------------------color of textbox and textarea----------------------*/
+
+input[type=text]{
+    background-color: #d6e0f0;
+}
+
+textarea{
+    background-color: #d6e0f0;
+}
+
+
+
+/* ---------------------------------the three maps-------------------------------------------------*/
+
+.three-branches{
+   
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+.branch-one{
+    padding-right: 3em;
+    
+    
+}
+
+.branch-one iframe{
+    width: 25em;
+  
+}
+
+
+
+
+
+
+.branch-two{
+    
+    width: ;
+}
+
+.branch-two iframe{
+    width: 25em;
+  
+}
+
+
+
+
+
+
+
+.branch-three{
+    
+    padding-left: 3em;
+
+}
+
+.branch-three iframe{
+    width: 25em;
+  
+}
+
+iframe{
+    border: solid;
+}
+
+.walkInTextRow{
+    font-family: 'Roboto', sans-serif;
+}
+
+.walkInTextRow td{
+    padding-top: 30px;
+}
+
+/*---------------------- hrsubtitle----------------------*/
+
+.hrSubTitle1{
+    margin:  auto;
+    display: block;
+    position: absolute;
+
+    transform: rotate(180deg) scaleX(-1);
+
+    top:640px;
+	left:15.9%;
+    z-index:1;
+
+    width: ;
+  
+}
+
+
+.hrSubTitle2{
+    margin:  auto;
+    display: block;
+    position: absolute;
+
+    transform: rotate(180deg) scaleX(-1);
+
+    top:640px;
+	left:67.5%;
+    z-index:1;
+
+    width: ;
+  
+}
+
+.hrSubTitle3{
+    margin:  auto;
+    display: block;
+    position: absolute;
+
+    transform: rotate(180deg) scaleX(-1);
+
+    top: 1113px;
+	left:43%;
+    z-index:1;
+
+    width: ;
+  
+}

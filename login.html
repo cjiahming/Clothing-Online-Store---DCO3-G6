@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>login page</title>
+        <link href="logincss.css" rel="stylesheet" type="text/css" /> 
+        <script type="text/javascript" src="login.js">
+        </script> 
+    </head>
+    <body>
+    <!--<div class="image">
+        <div class="image2">
+            <img src="login.jpg">
+        </div>
+    </div>-->
+    <div class="container">
+        <div class="logo">
+            <img src="trendywearlogo.png">
+            </div>
+        <div class="header">
+            <h2>TrendyWear</h2>
+            <h2>Login</h2>
+        </div>
+        <form class="login_form" name="form" onsubmit="return validate()" action="Homepage.html"><!--on submit lets user input return to the validated() function in js(trigger the function with onsubmit)-->
+            <div class="font">EMAIL</div>
+            <input type="email" name="email" id="email">
+            <div id="email_error" >*Please enter a valid Email</div>
+
+            <div class="font">PASSWORD</div>
+            <div class="input-container" id="input-container">
+            <input type="password" name="password" id="password"><!--the type password let user input become * or dot to protect the user password-->
+            <i class="material-icons visibility" onclick="visibility()">visibility_off</i>
+        </div>
+            <div id="pass_error">*Please enter a valid password</div>
+            
+        
+            <button type="submit" class="submit">Login</button>
+    </form>
+    <div class="extra">
+    <button class="forgetpass" onclick="forgetpass()" >Forget password? </button>
+    <a href="register.html"><button class="registernew">Register for new account </button></a>
+</div>
+</div>
+</body>
+</html>

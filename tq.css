@@ -1,0 +1,52 @@
+.tq {
+    margin-top:20px;
+    text-align:center;
+}
+
+.tq2 {
+    text-align:center;
+}
+
+.tq3{
+    text-align:center;
+}
+
+.infor {
+    border: 1px solid lightgrey;
+    margin:auto;
+    margin-top:25px;
+    margin-bottom: 120px;
+    width: 900px;
+    border-radius: 10px;
+    height: 395px;
+    box-shadow: 13px 13px 20px lightgrey;
+}
+
+.infor3 {
+    margin: 0 0 0 70px;
+}
+
+.ininfor {
+    margin: 0 0 0 70px;
+}
+
+#back {
+    float: right;
+    margin: 0 20px 20px 0;
+    padding: 4px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    border-radius: 3px;
+}
+
+#back:hover {
+    border-radius: 5px;
+    color: black;
+    padding: 7px;
+    background-color: greenyellow;
+    box-shadow: 5px 5px 5px lightgrey;
+
+}

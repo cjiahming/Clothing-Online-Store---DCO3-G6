@@ -1,0 +1,32 @@
+.shopnowbtn {
+    display: inline-block;
+    background-color: grey;
+    padding: 12px 20px;
+    margin: auto;
+    border-radius: 0;
+    transition: background-color 0.5s;
+}
+
+
+.col-4 {
+    float: left;
+    text-align: center;
+    width: 25%;
+    min-width: 250px;
+    padding: 20px;
+    line-height: 0.2em;
+    transition: transform 0.5s;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+
+.kids {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.kids img {
+    width: 100%;
+    height: 250px;
+}
